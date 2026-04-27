@@ -3,7 +3,7 @@ import axios from "axios";
 import { formatSubset, relabelAutomaton } from "../utils/automataView";
 
 const ConversionContext = createContext(null);
-const API_BASE_URL = process.env.REACT_APP_API_URL || "http://127.0.0.1:8000";
+const API_BASE_URL = "https://at-project.onrender.com" || "http://127.0.0.1:8000";
 
 export const CLEAN_EXAMPLES = ["a", "ab", "a|b", "(a|b)*abb", "a*b", "(ab|ba)(a|b)"];
 
